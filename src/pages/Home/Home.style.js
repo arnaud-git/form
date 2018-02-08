@@ -20,4 +20,15 @@ export default StyleSheet.create({
     color: theme.colors.darkGray,
     marginBottom: theme.grid.x1,
   },
+  touchableStyle: {
+    marginTop: 40,
+    alignSelf: 'center',
+    borderWidth: 1,
+    borderRadius: 20,
+    padding: 10,
+  },
+  touchableTextStyle: {
+    fontSize: 30,
+  },
+
 });

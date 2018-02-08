@@ -16,7 +16,12 @@ export default class Home extends Component<PropsType> {
 
   render() {
     return (
-      <UserInformationForm />
+      <View>
+        <UserInformationForm />
+        <TouchableOpacity style={styles.touchableStyle} onPress={() => { }}>
+          <Text style={styles.touchableTextStyle}>Submit!</Text>
+        </TouchableOpacity >
+      </View>
     );
   }
 }
