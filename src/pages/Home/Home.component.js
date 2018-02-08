@@ -4,10 +4,11 @@ import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 
 import { Page } from 'formAtion/src/components';
+import UserInformationForm from '../../components/Forms/UserInformationForm';
 
 import styles from './Home.style';
 
-export default class Home extends Component {
+export default class Home extends Component<PropsType> {
   static navigationOptions = {
     title: 'Home',
   };
@@ -15,20 +16,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <Page>
-        <View style={styles.container}>
-          <Text style={styles.welcome}>
-            Welcome to React Native!
-          </Text>
-          <Text style={styles.instructions}>
-            This is the Home page
-          </Text>
-          <Text style={styles.instructions}>
-            Double tap R on your keyboard to reload,{'\n'}
-            Shake or press menu button for dev menu
-          </Text>
-        </View>
-      </Page>
+      <UserInformationForm />
     );
   }
 }

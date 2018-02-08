@@ -13,7 +13,7 @@ export const AppNavigator = StackNavigator({
   },
 });
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <AppNavigator
