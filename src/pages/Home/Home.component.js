@@ -1,10 +1,10 @@
 // @flow
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 
 import { Page } from 'formAtion/src/components';
-import UserInformationForm from '../../components/Forms/UserInformationForm';
+import { UserInformationForm } from '../../components/index';
 
 import styles from './Home.style';
 
