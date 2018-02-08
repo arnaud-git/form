@@ -13,10 +13,13 @@ export default function SimpleTextInput(props) {
 
 const styles = StyleSheet.create({
   simpleTextInputStyle: {
-    height: 40,
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginHorizontal: 20,
     backgroundColor: 'white',
+    borderColor: 'gray',
+    borderRadius: 5,
+    borderWidth: 1,
+    height: 40,
+    marginHorizontal: 20,
+    marginVertical: 10,
+    paddingHorizontal: 10,
   }
 })

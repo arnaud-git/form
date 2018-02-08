@@ -18,7 +18,8 @@ function UserInformationForm() {
 
 const styles = StyleSheet.create({
   fieldNameStyle: {
-    marginLeft: 20,
+    marginHorizontal: 20,
+    marginTop: 10,
   }
 })
 
