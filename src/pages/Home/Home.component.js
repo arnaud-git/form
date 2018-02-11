@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, Alert } from 'react-native';
 
 import { Page } from 'formAtion/src/components';
 import { UserInformationForm } from '../../components/index';
@@ -16,12 +16,7 @@ export default class Home extends Component<PropsType> {
 
   render() {
     return (
-      <View>
-        <UserInformationForm />
-        <TouchableOpacity style={styles.touchableStyle} onPress={() => { }}>
-          <Text style={styles.touchableTextStyle}>Submit!</Text>
-        </TouchableOpacity >
-      </View>
+      <UserInformationForm onSubmit={(values) => Alert.alert('Submitted!', JSON.stringify(values))} />
     );
   }
 }
