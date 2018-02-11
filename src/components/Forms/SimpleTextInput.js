@@ -2,11 +2,14 @@ import React from 'react';
 import { TextInput, View, Text, StyleSheet } from 'react-native';
 
 export default function SimpleTextInput(props) {
-  const { input, ...inputProps } = props;
+  const { input } = props;
 
   return (
     <View>
-      <TextInput style={styles.simpleTextInputStyle} />
+      <TextInput
+        style={styles.simpleTextInputStyle}
+        onChangeText={input.onChange}
+        value={input.value} />
     </View>
   )
 }
