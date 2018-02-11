@@ -4,18 +4,20 @@ import { ScrollView, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 import SimpleTextInput from './SimpleTextInput';
 
-const UserInformationForm = (props) => {
-  return (
-    <ScrollView keyboardShouldPersistTaps={'handled'}>
-      <Text style={styles.fieldNameStyle}>Username</Text>
-      <Field
-        name={'username'}
-        component={SimpleTextInput}
-      />
-      <TouchableOpacity style={styles.touchableStyle} onPress={props.handleSubmit}>
-        <Text style={styles.touchableTextStyle}>Submit!</Text>
-      </TouchableOpacity >
-    </ScrollView >)
+class UserInformationForm extends Component {
+  render() {
+    return (
+      <ScrollView keyboardShouldPersistTaps={'handled'}>
+        <Text style={styles.fieldNameStyle}>Username</Text>
+        <Field
+          name={'username'}
+          component={SimpleTextInput}
+        />
+        <TouchableOpacity style={styles.touchableStyle} onPress={this.props.handleSubmit}>
+          <Text style={styles.touchableTextStyle}>Submit!</Text>
+        </TouchableOpacity >
+      </ScrollView >)
+  }
 };
 
 const styles = StyleSheet.create({
